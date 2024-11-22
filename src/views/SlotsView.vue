@@ -93,10 +93,12 @@ export default {
       :class="end ? 'translate-x-0' : 'translate-x-96'"
     />
     <div class="flex flex-col w-5/6 sm:w-2/3 items-center gap-5">
+
       <div class="flex flex-col items-center">
         <h2 class="text-[2em]">Slots</h2>
         <p id="lastReward" class="font-mono">Last reward: {{ lastReward }}</p>
       </div>
+
       <div id="slotSpace" class="pt-3 flex justify-center gap-5 w-full">
         <SlotComponent
           :key="i"
@@ -106,6 +108,7 @@ export default {
           class="slot"
         />
       </div>
+
       <div
         id="options"
         class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 trans"
@@ -135,6 +138,7 @@ export default {
           </button>
         </div>
       </div>
+
       <InfoComponent
         :elements="[
           {
@@ -172,6 +176,7 @@ export default {
           },
         ]"
       ></InfoComponent>
+
     </div>
   </main>
 </template>
